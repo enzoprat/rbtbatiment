@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RBT Bâtiment Multiservices, couverture et maçonnerie à Pertuis</title>
+<meta name="description" content="Entreprise générale du bâtiment à Pertuis. Couverture, nettoyage de toiture et maçonnerie dans le Vaucluse et les départements voisins. Devis gratuit, réponse le jour même.">
+<link rel="icon" href="rbt-logo-512.png">
+<link rel="apple-touch-icon" href="rbt-logo-512.png">
+<meta property="og:title" content="RBT Bâtiment Multiservices, couverture et maçonnerie à Pertuis">
+<meta property="og:description" content="Couverture, nettoyage de toiture et maçonnerie à Pertuis et dans les six départements voisins.">
+<meta property="og:image" content="rbt-logo-512.png">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --creme:#FBF1E5;
+  --creme-2:#F2E4D2;
+  --anthracite:#323433;
+  --orange:#EA7D20;
+  --olive:#6C733D;
+  --filet:rgba(50,52,51,.12);
+  --filet-clair:rgba(251,241,229,.18);
+  --tt:'Archivo',system-ui,sans-serif;
+  --tx:'Barlow',system-ui,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:96px}
+body{
+  margin:0;background:var(--creme);color:var(--anthracite);
+  font-family:var(--tx);font-size:17px;line-height:1.65;font-weight:400;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--tt);font-weight:700;line-height:1.14;letter-spacing:0;margin:0;text-transform:none}
+h1{font-size:clamp(2rem,7.2vw,3.6rem)}
+h2{font-size:clamp(1.65rem,5vw,2.5rem)}
+h3{font-size:1.18rem}
+p{margin:0 0 1rem}
+ul{margin:0;padding:0;list-style:none}
+button,input,select,textarea{font:inherit;color:inherit;border-radius:0}
+.wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 20px}
+section{padding:60px 0}
+.bg-2{background:var(--creme-2)}
+.bg-dark{background:var(--anthracite);color:var(--creme)}
+.bg-dark h2,.bg-dark h3{color:var(--creme)}
+
+/* motif de signature, deux traits diagonaux */
+.mark{display:inline-block;width:20px;height:14px;position:relative;vertical-align:-1px;margin-right:10px;flex:0 0 auto}
+.mark::before,.mark::after{content:"";position:absolute;top:0;width:3px;height:14px;background:var(--orange);transform:skewX(-26deg)}
+.mark::before{left:3px}
+.mark::after{left:11px}
+.eyebrow{display:flex;align-items:center;font-family:var(--tt);font-weight:600;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:var(--olive);margin:0 0 12px}
+.bg-dark .eyebrow{color:#A8B06B}
+.lede{max-width:62ch;color:rgba(50,52,51,.82)}
+.bg-dark .lede{color:rgba(251,241,229,.78)}
+.sep{height:1px;background:var(--filet);border:0;margin:0}
+
+/* boutons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:15px 26px;font-family:var(--tt);font-weight:600;font-size:.98rem;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background .18s,color .18s,border-color .18s}
+.btn-o{background:var(--orange);color:#fff;border-color:var(--orange)}
+.btn-o:hover{background:#d16d16;border-color:#d16d16}
+.btn-l{background:transparent;color:var(--anthracite);border-color:var(--anthracite)}
+.btn-l:hover{background:var(--anthracite);color:var(--creme)}
+.btn-c{background:transparent;color:var(--creme);border-color:var(--creme)}
+.btn-c:hover{background:var(--creme);color:var(--anthracite)}
+.arrow{font-family:var(--tx);font-weight:600}
+
+/* placeholder visuel */
+.ph{background:var(--creme-2);border:2px solid var(--orange);display:flex;align-items:center;justify-content:center;text-align:center;padding:18px;min-height:150px}
+.ph span{font-family:var(--tt);font-size:.8rem;font-weight:600;line-height:1.45;color:rgba(50,52,51,.7);max-width:24ch}
+.todo{font-family:var(--tt);font-weight:600;font-size:.78rem;color:var(--orange);background:rgba(234,125,32,.1);padding:2px 7px;display:inline-block;white-space:nowrap}
+
+/* bandeau de disponibilite */
+.topbar{background:var(--anthracite);color:var(--creme);font-size:.86rem}
+.topbar .wrap{display:flex;align-items:center;gap:12px;min-height:42px;padding-top:8px;padding-bottom:8px}
+.topbar p{margin:0;flex:1}
+.topbar svg{flex:0 0 auto;stroke:#A8B06B}
+.topbar button{background:none;border:0;color:rgba(251,241,229,.65);cursor:pointer;font-size:1.35rem;line-height:1;padding:0 2px}
+.topbar button:hover{color:var(--creme)}
+.topbar[hidden]{display:none}
+
+/* en-tete */
+.hdr{position:sticky;top:0;z-index:60;background:var(--creme);border-bottom:1px solid var(--filet);transition:background .25s,border-color .25s}
+.hdr .wrap{display:flex;align-items:center;gap:18px;min-height:74px;padding-top:12px;padding-bottom:12px;transition:min-height .25s,padding .25s}
+.logo{display:flex;align-items:center;padding:6px 0}
+.logo img{height:40px;width:auto}
+.logo .inv{display:none}
+.nav{display:none;flex:1;justify-content:center;gap:26px}
+.nav a{font-family:var(--tt);font-weight:600;font-size:.92rem;text-decoration:none;padding:6px 0;border-bottom:2px solid transparent}
+.nav a:hover{border-bottom-color:var(--orange)}
+.hdr-right{margin-left:auto;display:flex;align-items:center;gap:16px}
+.hdr-tel{display:none;line-height:1.2;text-decoration:none}
+.hdr-tel small{display:block;font-size:.72rem;color:var(--olive);font-weight:500}
+.hdr-tel strong{font-family:var(--tt);font-size:1.08rem;font-weight:700}
+.hdr .btn{padding:12px 20px;font-size:.9rem}
+.hdr-burger{background:none;border:1px solid var(--filet);padding:10px 12px;cursor:pointer;display:flex;flex-direction:column;gap:4px}
+.hdr-burger i{display:block;width:20px;height:2px;background:currentColor}
+.hdr.small .wrap{min-height:62px;padding-top:6px;padding-bottom:6px}
+.hdr.small{background:var(--anthracite);border-bottom-color:rgba(251,241,229,.14);color:var(--creme)}
+.hdr.small .logo .std{display:none}
+.hdr.small .logo .inv{display:block}
+.hdr.small .hdr-tel small{color:#A8B06B}
+.hdr.small .hdr-burger{border-color:rgba(251,241,229,.3)}
+.mnav{display:none;background:var(--creme);border-bottom:1px solid var(--filet)}
+.mnav.open{display:block}
+.mnav a{display:block;padding:14px 20px;text-decoration:none;font-family:var(--tt);font-weight:600;border-bottom:1px solid var(--filet)}
+.mnav .tel{color:var(--orange)}
+
+/* premier ecran */
+.hero{padding:44px 0 56px}
+.hero-grid{display:grid;gap:36px}
+.hero h1{margin:0 0 20px}
+.hero h1 span{display:block}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 30px}
+.hero-facts{display:flex;flex-wrap:wrap;gap:0;border-top:1px solid var(--filet);border-bottom:1px solid var(--filet);padding:16px 0}
+.hero-facts li{padding:6px 18px;border-left:1px solid var(--filet);font-size:.9rem;line-height:1.4;flex:1 1 140px}
+.hero-facts li:first-child{border-left:0;padding-left:0}
+.hero-facts b{display:block;font-family:var(--tt);font-size:1.3rem;font-weight:700}
+.mosaic{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-content:start}
+.mosaic .ph{min-height:210px}
+.mosaic .m3{display:none}
+.mkey{background:var(--orange);color:#fff;padding:20px;display:flex;flex-direction:column;justify-content:flex-end;min-height:120px}
+.mkey b{font-family:var(--tt);font-size:2.2rem;font-weight:700;line-height:1}
+.mkey span{font-size:.88rem;line-height:1.35}
+
+/* selecteur de chantier */
+.tabs{display:none;flex-wrap:wrap;gap:0;border-bottom:1px solid var(--filet);margin-bottom:0}
+.tabs button{background:none;border:0;border-bottom:3px solid transparent;padding:14px 22px;font-family:var(--tt);font-weight:600;font-size:1rem;cursor:pointer;margin-bottom:-1px}
+.tabs button[aria-selected="true"]{border-bottom-color:var(--orange);color:var(--anthracite)}
+.tabs button:not([aria-selected="true"]){color:rgba(50,52,51,.6)}
+.selmob{display:block;width:100%;padding:14px 16px;background:var(--creme);border:0;border-bottom:3px solid var(--orange);font-family:var(--tt);font-weight:600;margin-bottom:0}
+.panel{background:var(--creme);border-left:3px solid var(--orange);padding:26px 24px;margin-top:18px}
+.panel[hidden]{display:none}
+.panel h3{margin-bottom:10px}
+.panel ul{margin:16px 0}
+.panel li{position:relative;padding:6px 0 6px 26px;border-bottom:1px solid var(--filet)}
+.panel li::before{content:"";position:absolute;left:2px;top:15px;width:9px;height:9px;background:var(--olive)}
+.panel .delay{font-size:.92rem;margin:14px 0 20px}
+.panel .delay b{font-family:var(--tt)}
+
+/* metiers */
+.jobs{display:grid;gap:16px;margin-top:30px}
+.card{background:var(--creme-2);border-left:3px solid var(--orange);padding:26px 24px}
+.bg-2 .card{background:var(--creme)}
+.card-lead{display:grid;gap:20px}
+.card-lead .ph{min-height:180px}
+.card h3{margin-bottom:8px}
+.card .num{font-family:var(--tt);font-weight:700;font-size:1.5rem;color:var(--orange);line-height:1;display:block;margin-bottom:10px}
+.card p{font-size:.98rem;color:rgba(50,52,51,.82)}
+.card a.more{font-family:var(--tt);font-weight:600;font-size:.92rem;text-decoration:none;border-bottom:1px solid var(--filet);padding-bottom:3px}
+.card a.more:hover{border-bottom-color:var(--orange)}
+.jobs-row{display:grid;gap:16px}
+
+/* entreprise */
+.corp{display:grid;gap:36px}
+.stats li{padding:20px 0;border-top:1px solid var(--filet-clair)}
+.stats li:first-child{border-top:0;padding-top:0}
+.stats b{display:block;font-family:var(--tt);font-size:2.4rem;font-weight:700;color:var(--orange);line-height:1}
+.stats span{font-size:.94rem;color:rgba(251,241,229,.78)}
+
+/* deroule */
+.steps{position:relative;margin-top:34px;padding-left:26px}
+.steps::before{content:"";position:absolute;left:17px;top:8px;bottom:8px;width:3px;background:var(--orange)}
+.step{position:relative;padding:0 0 30px 40px}
+.step:last-child{padding-bottom:0}
+.step .n{position:absolute;left:-26px;top:0;width:38px;height:38px;background:var(--orange);color:#fff;font-family:var(--tt);font-weight:700;display:flex;align-items:center;justify-content:center;font-size:1rem}
+.step h3{margin-bottom:4px}
+.step p{margin:0;font-size:.98rem;color:rgba(50,52,51,.82)}
+
+/* realisations */
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 26px}
+.filters button{background:none;border:1px solid var(--filet);padding:9px 16px;font-family:var(--tt);font-weight:600;font-size:.88rem;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--anthracite);color:var(--creme);border-color:var(--anthracite)}
+.works{display:grid;gap:16px}
+.work{background:var(--creme);border-left:3px solid var(--orange)}
+.work .ph{border:0;border-bottom:2px solid var(--orange);min-height:170px;background:var(--creme-2)}
+.work-b{padding:18px 20px}
+.work h3{font-size:1.05rem;margin-bottom:6px}
+.work dl{margin:10px 0 0;font-size:.9rem}
+.work dl div{display:flex;gap:8px;padding:5px 0;border-top:1px solid var(--filet)}
+.work dt{color:rgba(50,52,51,.6);flex:0 0 78px}
+.work dd{margin:0}
+.work[hidden]{display:none}
+
+/* avis */
+.reviews{display:grid;gap:16px;margin-top:28px}
+.review{background:var(--creme-2);border-left:3px solid var(--olive);padding:24px}
+.review .stars{color:var(--olive);letter-spacing:3px;font-size:1rem;margin-bottom:12px}
+.review blockquote{margin:0 0 16px;font-size:1.1rem;line-height:1.6}
+.review footer{font-size:.9rem;color:rgba(50,52,51,.7);border-top:1px solid var(--filet);padding-top:12px}
+.review footer b{display:block;font-family:var(--tt);color:var(--anthracite);font-size:.98rem}
+.google{margin-top:24px;font-size:.92rem}
+
+/* zone */
+.zones{display:grid;gap:26px;margin-top:28px}
+.zone h3{font-size:1.05rem;padding-bottom:10px;border-bottom:2px solid var(--orange);margin-bottom:14px}
+.zone li{padding:7px 0 7px 20px;position:relative;border-bottom:1px solid var(--filet);font-size:.97rem}
+.zone li::before{content:"";position:absolute;left:0;top:16px;width:8px;height:8px;background:var(--olive)}
+.zone a{text-decoration:none}
+.zone a:hover{color:var(--orange)}
+.zone-note{margin-top:26px;font-size:.95rem;max-width:70ch}
+
+/* faq */
+.faq{margin-top:28px;border-top:1px solid var(--filet-clair)}
+.faq details{border-bottom:1px solid var(--filet-clair)}
+.faq summary{list-style:none;cursor:pointer;padding:20px 44px 20px 0;position:relative;font-family:var(--tt);font-weight:600;font-size:1.05rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:6px;top:16px;color:var(--orange);font-size:1.7rem;line-height:1;transition:transform .22s}
+.faq details[open] summary::after{transform:rotate(135deg)}
+.faq .a{padding:0 0 22px;color:rgba(251,241,229,.78);max-width:74ch}
+.faq .a p{margin:0}
+
+/* contact */
+.contact{display:grid;gap:36px}
+.cinfo dl{margin:0}
+.cinfo .big{font-family:var(--tt);font-weight:700;font-size:clamp(1.7rem,6vw,2.3rem);color:var(--anthracite);text-decoration:none;display:inline-block;border-bottom:3px solid var(--orange);line-height:1.2;margin-bottom:20px}
+.cinfo .row{padding:14px 0;border-top:1px solid var(--filet)}
+.cinfo .row b{display:block;font-family:var(--tt);font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;color:var(--olive);margin-bottom:2px}
+.form{display:grid;gap:18px}
+.field label{display:block;font-family:var(--tt);font-weight:600;font-size:.86rem;margin-bottom:6px}
+.field input,.field select,.field textarea{width:100%;background:var(--creme-2);border:0;border-bottom:2px solid var(--anthracite);padding:13px 12px;font-size:1rem}
+.field textarea{min-height:120px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--orange);outline-offset:1px}
+.field .err{display:none;color:#b3400f;font-size:.85rem;margin-top:5px}
+.field.bad input,.field.bad select,.field.bad textarea{border-bottom-color:#b3400f}
+.field.bad .err{display:block}
+.field.ok input,.field.ok select,.field.ok textarea{border-bottom-color:var(--olive)}
+.consent{display:flex;gap:12px;align-items:flex-start;font-size:.9rem;line-height:1.5}
+.consent input{width:22px;height:22px;flex:0 0 auto;margin-top:2px;accent-color:var(--orange)}
+.consent.bad{color:#b3400f}
+.formok{background:var(--creme-2);border-left:3px solid var(--olive);padding:22px}
+.formok[hidden]{display:none}
+.formok h3{margin-bottom:8px}
+.grid2{display:grid;gap:18px}
+
+/* pied de page */
+.foot{background:var(--anthracite);color:rgba(251,241,229,.78);padding:56px 0 0;font-size:.94rem}
+.foot-grid{display:grid;gap:32px}
+.foot img{height:44px;width:auto;margin-bottom:16px}
+.foot h4{font-family:var(--tt);font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;color:var(--creme);margin:0 0 14px}
+.foot li{padding:5px 0}
+.foot a{text-decoration:none}
+.foot a:hover{color:var(--orange)}
+.foot .legal{margin-top:40px;border-top:1px solid var(--filet-clair);padding:22px 0 100px;font-size:.83rem;color:rgba(251,241,229,.55)}
+@media(min-width:900px){.foot .legal{padding-bottom:30px}}
+
+/* elements persistants */
+.stickybar{position:fixed;left:0;right:0;bottom:0;z-index:70;background:var(--anthracite);display:flex;gap:8px;padding:8px;transform:translateY(120%);transition:transform .28s;border-top:1px solid rgba(251,241,229,.16)}
+.stickybar.show{transform:translateY(0)}
+.stickybar a{flex:2;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:11px 8px;text-decoration:none;font-family:var(--tt);font-weight:700;font-size:.95rem;background:var(--orange);color:#fff;line-height:1.2}
+.stickybar a small{font-weight:500;font-size:.72rem}
+.stickybar a.sec{flex:1;background:transparent;border:2px solid var(--creme);color:var(--creme)}
+.deskcall{display:none;position:fixed;right:22px;bottom:22px;z-index:70;background:var(--anthracite);border:2px solid var(--orange);color:var(--creme);padding:12px 18px;text-decoration:none;line-height:1.25}
+.deskcall small{display:block;font-size:.72rem;color:#A8B06B}
+.deskcall b{font-family:var(--tt);font-size:1.1rem}
+.deskcall:hover{background:var(--orange);border-color:var(--orange);color:#fff}
+.deskcall:hover small{color:rgba(255,255,255,.85)}
+
+@media(min-width:640px){
+  .hero-grid{gap:40px}
+  .mosaic .m3{display:flex}
+  .jobs-row{grid-template-columns:1fr 1fr}
+  .works{grid-template-columns:1fr 1fr}
+  .reviews{grid-template-columns:1fr}
+  .grid2{grid-template-columns:1fr 1fr}
+  .card-lead{grid-template-columns:1.7fr 1fr;align-items:start}
+}
+@media(min-width:900px){
+  body{font-size:17px}
+  section{padding:86px 0}
+  html{scroll-padding-top:110px}
+  .wrap{padding:0 32px}
+  .logo img{height:52px}
+  .nav{display:flex}
+  .hdr-tel{display:block}
+  .hdr-burger{display:none}
+  .hero{padding:64px 0 84px}
+  .hero-grid{grid-template-columns:55fr 45fr;gap:56px;align-items:center}
+  .mosaic{grid-template-columns:1fr 1fr;gap:14px}
+  .mosaic .m1{margin-top:34px}
+  .mosaic .m2{margin-top:0}
+  .mosaic .m3{margin-top:-14px}
+  .mosaic .ph{min-height:260px}
+  .tabs{display:flex}
+  .selmob{display:none}
+  .panel{padding:34px 36px}
+  .grid-panel{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:start}
+  .corp{grid-template-columns:1.25fr 1fr;gap:64px;align-items:start}
+  .works{grid-template-columns:repeat(3,1fr)}
+  .reviews{grid-template-columns:repeat(3,1fr);gap:20px}
+  .zones{grid-template-columns:repeat(3,1fr);gap:36px}
+  .contact{grid-template-columns:1fr 1.15fr;gap:64px}
+  .foot-grid{grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px}
+  .stickybar{display:none}
+  .deskcall{display:block}
+  .step{padding-left:46px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important}
+}
+</style>
+</head>
+<body>
+
+<!-- 1. bandeau de disponibilite -->
+<div class="topbar" id="topbar">
+  <div class="wrap">
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+    <p>Remplissez le formulaire, nous vous rappelons le jour même.</p>
+    <button type="button" id="topbar-close" aria-label="Fermer le bandeau">&times;</button>
+  </div>
+</div>
+
+<!-- 2. en-tete -->
+<header class="hdr" id="hdr">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="RBT Bâtiment Multiservices, retour en haut de page">
+      <img class="std" src="rbt-logo.png" alt="RBT Bâtiment Multiservices" width="93" height="52">
+      <img class="inv" src="rbt-logo-inverse.png" alt="RBT Bâtiment Multiservices" width="93" height="52">
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#metiers">Nos métiers</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#entreprise">L'entreprise</a>
+      <a href="#zone">Zone d'intervention</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hdr-right">
+      <a class="hdr-tel" href="tel:+33767806239">
+        <small>Rappel le jour même</small>
+        <strong>07 67 80 62 39</strong>
+      </a>
+      <a class="btn btn-o" href="#contact">Demander un devis</a>
+      <button class="hdr-burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><i></i><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+<nav class="mnav" id="mnav" aria-label="Navigation mobile">
+  <a href="#metiers">Nos métiers</a>
+  <a href="#realisations">Réalisations</a>
+  <a href="#entreprise">L'entreprise</a>
+  <a href="#zone">Zone d'intervention</a>
+  <a href="#contact">Contact</a>
+  <a class="tel" href="tel:+33767806239">07 67 80 62 39</a>
+</nav>
+
+<main id="top">
+
+<!-- 3. premier ecran -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow"><span class="mark"></span>Entreprise du bâtiment installée à Pertuis</p>
+      <h1>
+        <span>Couverture, nettoyage</span>
+        <span>de toiture et maçonnerie</span>
+        <span>à Pertuis et alentour</span>
+      </h1>
+      <p class="lede">RBT Bâtiment Multiservices reprend les toitures et les ouvrages maçonnés depuis 2020. Nos équipes partent de Pertuis et couvrent les six départements voisins, de Marseille à Digne-les-Bains.</p>
+      <div class="hero-cta">
+        <a class="btn btn-o" href="#contact">Demander un devis</a>
+        <a class="btn btn-l" href="#realisations">Voir nos chantiers</a>
+      </div>
+      <ul class="hero-facts">
+        <li><b>6 ans</b>d'activité</li>
+        <li><b>29</b>chantiers depuis janvier</li>
+        <li><b>4.8</b>note moyenne, plus de 100 clients</li>
+        <li><b>Décennale</b>assureur <span class="todo">[[À CONFIRMER]]</span></li>
+      </ul>
+    </div>
+    <div class="mosaic">
+      <div class="ph m1"><span>Photo à fournir, réfection de toiture en tuiles, format portrait</span></div>
+      <div class="ph m2"><span>Photo à fournir, démoussage de toiture avant et après</span></div>
+      <div class="ph m3"><span>Photo à fournir, mur en pierre monté par l'équipe</span></div>
+      <div class="mkey">
+        <b>+45</b>
+        <span>chantiers menés chaque année</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. selecteur de chantier -->
+<section class="bg-2" id="selecteur">
+  <div class="wrap">
+    <p class="eyebrow"><span class="mark"></span>Préparer votre demande</p>
+    <h2>Choisissez votre type de chantier</h2>
+    <p class="lede">Sélectionnez le corps de métier concerné. Le formulaire se remplit ensuite avec le bon type de chantier.</p>
+
+    <div style="margin-top:28px">
+      <div class="tabs" role="tablist" aria-label="Types de chantier">
+        <button role="tab" id="tab-couverture" aria-controls="p-couverture" aria-selected="true" data-job="couverture">Couverture</button>
+        <button role="tab" id="tab-nettoyage" aria-controls="p-nettoyage" aria-selected="false" data-job="nettoyage">Nettoyage de toiture</button>
+        <button role="tab" id="tab-maconnerie" aria-controls="p-maconnerie" aria-selected="false" data-job="maconnerie">Maçonnerie</button>
+      </div>
+      <label for="selmob" class="visually-hidden" style="position:absolute;left:-9999px">Type de chantier</label>
+      <select class="selmob" id="selmob">
+        <option value="couverture">Couverture</option>
+        <option value="nettoyage">Nettoyage de toiture</option>
+        <option value="maconnerie">Maçonnerie</option>
+      </select>
+
+      <div class="panel" id="p-couverture" role="tabpanel" aria-labelledby="tab-couverture">
+        <div class="grid-panel">
+          <div>
+            <h3>Couverture</h3>
+            <p>Nous intervenons sur les toitures qui prennent l'eau, se déforment ou perdent leurs tuiles.</p>
+            <ul>
+              <li>Remplacement de tuiles cassées après un coup de vent</li>
+              <li>Réfection d'un pan de toiture avec reprise du liteaunage</li>
+              <li>Pose de gouttières, de solins et d'habillages en zinc</li>
+            </ul>
+          </div>
+          <div>
+            <p class="delay">Délai de démarrage habituel <b class="todo">[[À CONFIRMER]]</b></p>
+            <a class="btn btn-o" href="#contact" data-fill="couverture">Demander un devis pour ce chantier</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel" id="p-nettoyage" role="tabpanel" aria-labelledby="tab-nettoyage" hidden>
+        <div class="grid-panel">
+          <div>
+            <h3>Nettoyage de toiture</h3>
+            <p>La mousse retient l'eau et abîme les tuiles. Nous nettoyons le toit puis nous le traitons.</p>
+            <ul>
+              <li>Démoussage manuel ou basse pression selon l'état des tuiles</li>
+              <li>Application d'un traitement hydrofuge après séchage</li>
+              <li>Curage des gouttières et des descentes d'eau pluviale</li>
+            </ul>
+          </div>
+          <div>
+            <p class="delay">Délai de démarrage habituel <b class="todo">[[À CONFIRMER]]</b></p>
+            <a class="btn btn-o" href="#contact" data-fill="nettoyage">Demander un devis pour ce chantier</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel" id="p-maconnerie" role="tabpanel" aria-labelledby="tab-maconnerie" hidden>
+        <div class="grid-panel">
+          <div>
+            <h3>Maçonnerie</h3>
+            <p>Nous montons, reprenons et enduisons les ouvrages en parpaing, en brique et en pierre.</p>
+            <ul>
+              <li>Ouverture d'un mur porteur avec pose de linteau</li>
+              <li>Montage de murets, de clôtures et de dalles béton</li>
+              <li>Reprise de fissures et enduits de façade</li>
+            </ul>
+          </div>
+          <div>
+            <p class="delay">Délai de démarrage habituel <b class="todo">[[À CONFIRMER]]</b></p>
+            <a class="btn btn-o" href="#contact" data-fill="maconnerie">Demander un devis pour ce chantier</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. les metiers -->
+<section id="metiers">
+  <div class="wrap">
+    <p class="eyebrow"><span class="mark"></span>Nos métiers</p>
+    <h2>Trois savoir-faire, une seule équipe sur le chantier</h2>
+    <p class="lede">Vous gardez le même interlocuteur du premier appel jusqu'à la réception des travaux.</p>
+
+    <div class="jobs">
+      <article class="card">
+        <div class="card-lead">
+          <div>
+            <span class="num">01</span>
+            <h3>Couverture</h3>
+            <p>C'est notre cœur de métier. Nous diagnostiquons la fuite avant de proposer une reprise, parce qu'une tuile déplacée ne se traite pas comme une charpente fatiguée. Nous travaillons la tuile canal, la tuile mécanique et le zinc.</p>
+            <p>Chaque intervention commence par une montée sur le toit et un relevé précis. Vous recevez ensuite un devis qui détaille les fournitures et la main d'œuvre poste par poste.</p>
+            <a class="more" href="#contact" data-fill="couverture">Demander un devis couverture <span class="arrow">&rarr;</span></a>
+          </div>
+          <div class="ph"><span>Photo à fournir, réfection de couverture en tuiles canal, Pertuis</span></div>
+        </div>
+      </article>
+
+      <div class="jobs-row">
+        <article class="card">
+          <span class="num">02</span>
+          <h3>Nettoyage de toiture</h3>
+          <p>Démoussage, traitement hydrofuge et nettoyage des gouttières. L'opération se planifie hors période de pluie pour laisser le produit sécher.</p>
+          <a class="more" href="#contact" data-fill="nettoyage">Demander un devis nettoyage <span class="arrow">&rarr;</span></a>
+        </article>
+        <article class="card">
+          <span class="num">03</span>
+          <h3>Maçonnerie</h3>
+          <p>Murs, ouvertures, dalles et enduits. Nous reprenons aussi les fissures de façade après avoir cherché leur origine.</p>
+          <a class="more" href="#contact" data-fill="maconnerie">Demander un devis maçonnerie <span class="arrow">&rarr;</span></a>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. l'entreprise, bloc anthracite 1 sur 3 -->
+<section class="bg-dark" id="entreprise">
+  <div class="wrap corp">
+    <div>
+      <p class="eyebrow"><span class="mark"></span>L'entreprise</p>
+      <h2>Une équipe de six personnes basée à Pertuis</h2>
+      <p class="lede">RBT Bâtiment Multiservices a été créée en 2020 par <span class="todo">[[À CONFIRMER, nom du gérant à ajouter]]</span>, après plusieurs années passées sur les toits de la région. L'entreprise est une SASU dont le siège se trouve à Pertuis.</p>
+      <p class="lede">Nous travaillons en petites équipes. La personne qui vient chiffrer votre chantier fait partie de celles qui l'exécutent, ce qui limite les écarts entre le devis et la réalité du terrain.</p>
+      <p class="lede">La date de démarrage est annoncée par écrit avant la signature. Le chantier est balayé et débarrassé chaque soir, et les gravats partent en déchèterie à nos frais.</p>
+    </div>
+    <ul class="stats">
+      <li><b>2020</b><span>année de création de l'entreprise</span></li>
+      <li><b>6</b><span>personnes dans l'équipe</span></li>
+      <li><b>+45</b><span>chantiers réalisés par an</span></li>
+      <li><b>29</b><span>chantiers depuis janvier</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 7. deroule d'un chantier -->
+<section id="deroule">
+  <div class="wrap">
+    <p class="eyebrow"><span class="mark"></span>Déroulé d'un chantier</p>
+    <h2>Ce qui se passe entre votre appel et la fin des travaux</h2>
+
+    <div class="steps">
+      <div class="step">
+        <span class="n">1</span>
+        <h3>Prise de contact et écoute du besoin</h3>
+        <p>Vous nous appelez ou vous remplissez le formulaire. Nous rappelons le jour même pour comprendre la nature du problème.</p>
+      </div>
+      <div class="step">
+        <span class="n">2</span>
+        <h3>Visite sur place et prise de mesures</h3>
+        <p>Nous venons voir le chantier, nous montons sur le toit si nécessaire. Les mesures sont relevées sur place, pas estimées au téléphone.</p>
+      </div>
+      <div class="step">
+        <span class="n">3</span>
+        <h3>Devis détaillé poste par poste</h3>
+        <p>Vous recevez le devis par e-mail. Chaque ligne indique la fourniture, la quantité et la main d'œuvre, sans forfait global.</p>
+      </div>
+      <div class="step">
+        <span class="n">4</span>
+        <h3>Réalisation des travaux</h3>
+        <p>La date de démarrage est fixée à la signature. Vous êtes prévenu si la météo impose de décaler une journée.</p>
+      </div>
+      <div class="step">
+        <span class="n">5</span>
+        <h3>Réception du chantier</h3>
+        <p>Nous faisons le tour des travaux avec vous. Les réserves éventuelles sont notées et reprises avant la facturation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. realisations -->
+<section class="bg-2" id="realisations">
+  <div class="wrap">
+    <p class="eyebrow"><span class="mark"></span>Réalisations</p>
+    <h2>Quelques chantiers menés par l'équipe</h2>
+    <p class="lede">Les visuels et les données de chaque chantier restent à fournir. Seules des photos prises sur nos propres chantiers seront publiées.</p>
+
+    <div class="filters" role="group" aria-label="Filtrer les réalisations par métier">
+      <button type="button" data-filter="all" aria-pressed="true">Tous les chantiers</button>
+      <button type="button" data-filter="couverture" aria-pressed="false">Couverture</button>
+      <button type="button" data-filter="nettoyage" aria-pressed="false">Nettoyage de toiture</button>
+      <button type="button" data-filter="maconnerie" aria-pressed="false">Maçonnerie</button>
+    </div>
+
+    <div class="works" id="works">
+      <article class="work" data-cat="couverture">
+        <div class="ph"><span>Photo à fournir, réfection de toiture, format paysage</span></div>
+        <div class="work-b">
+          <h3>Réfection de couverture</h3>
+          <dl>
+            <div><dt>Ville</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
+            <div><dt>Travaux</dt><dd>Dépose des tuiles, reprise du support, repose</dd></div>
+            <div><dt>Durée</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
+          </dl>
+        </div>
+      </article>
+      <article class="work" data-cat="couverture">
+        <div class="ph"><span>Photo à fournir, pose de gouttières en zinc, format paysage</span></div>
+        <div class="work-b">
+          <h3>Pose de gouttières</h3>
+          <dl>
+            <div><dt>Ville</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
+            <div><dt>Travaux</dt><dd>Dépose de l'ancien réseau, pose de gouttières zinc</dd></div>
+            <div><dt>Durée</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
+          </dl>
+        </div>
+      </article>
+      <article class="work" data-cat="nettoyage">
+        <div class="ph"><span>Photo à fournir, démoussage de toiture avant et après, format paysage</span></div>
+        <div class="work-b">
+          <h3>Démoussage de toiture</h3>
+          <dl>
+            <div><dt>Ville</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
+            <div><dt>Travaux</dt><dd>Démoussage puis traitement hydrofuge</dd></div>
+            <div><dt>Durée</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
+          </dl>
+        </div>
+      </article>
+      <article class="work" data-cat="nettoyage">
+        <div class="ph"><span>Photo à fournir, nettoyage de gouttières, format paysage</span></div>
+        <div class="work-b">
+          <h3>Nettoyage de gouttières</h3>
+          <dl>
+            <div><dt>Ville</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
+            <div><dt>Travaux</dt><dd>Curage des chéneaux et des descentes</dd></div>
+            <div><dt>Durée</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
+          </dl>
+        </div>
+      </article>
+      <article class="work" data-cat="maconnerie">
+        <div class="ph"><span>Photo à fournir, mur en pierre monté par l'équipe, format paysage</span></div>
+        <div class="work-b">
+          <h3>Montage d'un mur</h3>
+          <dl>
+            <div><dt>Ville</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
+            <div><dt>Travaux</dt><dd>Fondation, montage et jointoiement</dd></div>
+            <div><dt>Durée</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
+          </dl>
+        </div>
+      </article>
+      <article class="work" data-cat="maconnerie">
+        <div class="ph"><span>Photo à fournir, reprise de fissures de façade, format paysage</span></div>
+        <div class="work-b">
+          <h3>Reprise de façade</h3>
+          <dl>
+            <div><dt>Ville</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
+            <div><dt>Travaux</dt><dd>Ouverture des fissures, agrafage, enduit</dd></div>
+            <div><dt>Durée</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
+          </dl>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 9. avis clients -->
+<section id="avis">
+  <div class="wrap">
+    <p class="eyebrow"><span class="mark"></span>Avis clients</p>
+    <h2>Ce que disent les clients après le chantier</h2>
+    <p class="lede">La fiche Google n'est pas encore créée. Les trois avis ci-dessous seront remplacés par des avis réellement déposés.</p>
+
+    <div class="reviews">
+      <article class="review">
+        <div class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>Avis à récupérer une fois la fiche Google en ligne. Le texte du client sera repris tel qu'il a été déposé, sans reformulation.</blockquote>
+        <footer>
+          <b class="todo">[[À CONFIRMER, prénom]]</b>
+          <span class="todo">[[À CONFIRMER, ville]]</span>, <span class="todo">[[À CONFIRMER, nature du chantier]]</span>
+        </footer>
+      </article>
+      <article class="review">
+        <div class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>Avis à récupérer une fois la fiche Google en ligne. Le texte du client sera repris tel qu'il a été déposé, sans reformulation.</blockquote>
+        <footer>
+          <b class="todo">[[À CONFIRMER, prénom]]</b>
+          <span class="todo">[[À CONFIRMER, ville]]</span>, <span class="todo">[[À CONFIRMER, nature du chantier]]</span>
+        </footer>
+      </article>
+      <article class="review">
+        <div class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>Avis à récupérer une fois la fiche Google en ligne. Le texte du client sera repris tel qu'il a été déposé, sans reformulation.</blockquote>
+        <footer>
+          <b class="todo">[[À CONFIRMER, prénom]]</b>
+          <span class="todo">[[À CONFIRMER, ville]]</span>, <span class="todo">[[À CONFIRMER, nature du chantier]]</span>
+        </footer>
+      </article>
+    </div>
+    <p class="google">Note moyenne actuelle de 4.8 sur plus de 100 clients. Lien vers la fiche Google <span class="todo">[[À CONFIRMER, fiche à créer]]</span></p>
+  </div>
+</section>
+
+<!-- 10. zone d'intervention -->
+<section class="bg-2" id="zone">
+  <div class="wrap">
+    <p class="eyebrow"><span class="mark"></span>Zone d'intervention</p>
+    <h2>Nous partons de Pertuis vers six départements</h2>
+    <p class="lede">Les durées indiquées correspondent au trajet depuis Pertuis. Elles servent à situer votre commune, pas à fixer le délai des travaux.</p>
+
+    <div class="zones">
+      <div class="zone">
+        <h3>Moins de 30 minutes</h3>
+        <ul>
+          <li><a href="#contact">Pertuis</a></li>
+          <li><a href="#contact">Aix-en-Provence</a></li>
+          <li><a href="#contact">Manosque</a></li>
+        </ul>
+      </div>
+      <div class="zone">
+        <h3>30 minutes à 1 heure</h3>
+        <ul>
+          <li><a href="#contact">Marseille</a></li>
+          <li><a href="#contact">Avignon</a></li>
+          <li><a href="#contact">Salon-de-Provence</a></li>
+          <li><a href="#contact">Brignoles</a></li>
+        </ul>
+      </div>
+      <div class="zone">
+        <h3>1 heure à 2 h 30</h3>
+        <ul>
+          <li><a href="#contact">Toulon</a></li>
+          <li><a href="#contact">Nîmes</a></li>
+          <li><a href="#contact">Digne-les-Bains</a></li>
+          <li><a href="#contact">Cannes</a></li>
+          <li><a href="#contact">Nice</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="zone-note">Votre commune ne figure pas dans ces listes. Appelez-nous, nous nous déplaçons sans condition particulière au-delà de cette zone.</p>
+  </div>
+</section>
+
+<!-- 11. questions frequentes, bloc anthracite 2 sur 3 -->
+<section class="bg-dark" id="faq">
+  <div class="wrap">
+    <p class="eyebrow"><span class="mark"></span>Questions fréquentes</p>
+    <h2>Les questions posées avant de signer</h2>
+
+    <div class="faq" id="faq-list">
+      <details name="faq">
+        <summary>Comment obtenir un devis</summary>
+        <div class="a"><p>Appelez le 07 67 80 62 39 ou remplissez le formulaire en bas de page. Nous rappelons le jour même pour fixer une visite. Le devis est envoyé par e-mail après le passage sur place.</p></div>
+      </details>
+      <details name="faq">
+        <summary>Sous quel délai un chantier peut démarrer</summary>
+        <div class="a"><p>Le délai dépend du métier et de la saison. La date de démarrage est indiquée sur le devis avant votre signature. Délai moyen constaté <span class="todo">[[À CONFIRMER]]</span></p></div>
+      </details>
+      <details name="faq">
+        <summary>Les devis sont-ils payants</summary>
+        <div class="a"><p>Le déplacement, la prise de mesures et l'établissement du devis sont gratuits dans notre zone d'intervention. Vous n'avez rien à régler tant que rien n'est signé.</p></div>
+      </details>
+      <details name="faq">
+        <summary>Comment se passe le paiement</summary>
+        <div class="a"><p>Les modalités figurent sur le devis, avec le montant de l'acompte et l'échéancier. Moyens de paiement acceptés et pourcentage d'acompte <span class="todo">[[À CONFIRMER]]</span></p></div>
+      </details>
+      <details name="faq">
+        <summary>Quelles assurances couvrent les travaux</summary>
+        <div class="a"><p>L'entreprise est couverte par une assurance de responsabilité civile professionnelle et une garantie décennale. Assureur et numéro de contrat <span class="todo">[[À CONFIRMER]]</span>. L'attestation est remise avec le devis.</p></div>
+      </details>
+      <details name="faq">
+        <summary>Qui intervient si un problème apparaît après la réception</summary>
+        <div class="a"><p>Vous appelez le même numéro. Nous revenons constater sur place. Les désordres relevant de la garantie décennale sont pris en charge pendant dix ans à compter de la réception.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 12. formulaire de contact -->
+<section id="contact">
+  <div class="wrap contact">
+    <div class="cinfo">
+      <p class="eyebrow"><span class="mark"></span>Contact</p>
+      <h2>Parlons de votre chantier</h2>
+      <p class="lede">Une demande envoyée avant 18 h reçoit une réponse le jour même.</p>
+      <a class="big" href="tel:+33767806239">07 67 80 62 39</a>
+      <div class="row"><b>E-mail</b><span class="todo">[[À CONFIRMER]]</span></div>
+      <div class="row"><b>Adresse</b>Pertuis, Vaucluse. Adresse complète du siège <span class="todo">[[À CONFIRMER]]</span></div>
+      <div class="row"><b>Horaires</b><span class="todo">[[À CONFIRMER]]</span></div>
+      <div class="row"><b>Délai de réponse</b>Rappel le jour même du lundi au vendredi</div>
+    </div>
+
+    <div>
+      <form class="form" id="devis" novalidate>
+        <div class="grid2">
+          <div class="field">
+            <label for="f-nom">Nom et prénom</label>
+            <input id="f-nom" name="nom" type="text" autocomplete="name" required>
+            <span class="err">Indiquez votre nom et votre prénom.</span>
+          </div>
+          <div class="field">
+            <label for="f-tel">Téléphone</label>
+            <input id="f-tel" name="tel" type="tel" autocomplete="tel" inputmode="tel" required>
+            <span class="err">Indiquez un numéro à 10 chiffres.</span>
+          </div>
+        </div>
+        <div class="grid2">
+          <div class="field">
+            <label for="f-mail">E-mail</label>
+            <input id="f-mail" name="email" type="email" autocomplete="email" required>
+            <span class="err">Indiquez une adresse e-mail valide.</span>
+          </div>
+          <div class="field">
+            <label for="f-ville">Commune du chantier</label>
+            <input id="f-ville" name="ville" type="text" autocomplete="address-level2" required>
+            <span class="err">Indiquez la commune du chantier.</span>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-type">Type de chantier</label>
+          <select id="f-type" name="type" required>
+            <option value="">Choisissez un métier</option>
+            <option value="couverture">Couverture</option>
+            <option value="nettoyage">Nettoyage de toiture</option>
+            <option value="maconnerie">Maçonnerie</option>
+            <option value="autre">Autre demande</option>
+          </select>
+          <span class="err">Choisissez un type de chantier.</span>
+        </div>
+        <div class="field">
+          <label for="f-desc">Description des travaux</label>
+          <textarea id="f-desc" name="description" required placeholder="Nature du problème, surface concernée, étage, accès au chantier"></textarea>
+          <span class="err">Décrivez les travaux en quelques lignes.</span>
+        </div>
+        <label class="consent" id="consent-wrap">
+          <input type="checkbox" id="f-rgpd" name="consentement" required>
+          <span>J'accepte que mes informations soient utilisées pour me recontacter au sujet de ma demande. <a href="#confidentialite">Politique de confidentialité</a></span>
+        </label>
+        <div>
+          <button class="btn btn-o" type="submit">Envoyer ma demande</button>
+        </div>
+      </form>
+
+      <div class="formok" id="formok" hidden role="status">
+        <h3>Votre demande est enregistrée</h3>
+        <p>Nous vous rappelons le jour même au numéro indiqué. Pour un besoin rapide, appelez le <a href="tel:+33767806239">07 67 80 62 39</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- 13. pied de page, bloc anthracite 3 sur 3 -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img src="rbt-logo-inverse.png" alt="RBT Bâtiment Multiservices" width="79" height="44">
+        <p>Couverture, nettoyage de toiture et maçonnerie à Pertuis et dans les départements voisins.</p>
+        <p>
+          <a href="tel:+33767806239">07 67 80 62 39</a><br>
+          E-mail <span class="todo">[[À CONFIRMER]]</span><br>
+          Pertuis, Vaucluse. Adresse complète <span class="todo">[[À CONFIRMER]]</span><br>
+          Horaires <span class="todo">[[À CONFIRMER]]</span>
+        </p>
+      </div>
+      <div>
+        <h4>Nos métiers</h4>
+        <ul>
+          <li><a href="#metiers">Couverture</a></li>
+          <li><a href="#metiers">Nettoyage de toiture</a></li>
+          <li><a href="#metiers">Maçonnerie</a></li>
+          <li><a href="#realisations">Réalisations</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Communes</h4>
+        <ul>
+          <li><a href="#zone">Pertuis</a></li>
+          <li><a href="#zone">Aix-en-Provence</a></li>
+          <li><a href="#zone">Manosque</a></li>
+          <li><a href="#zone">Marseille</a></li>
+          <li><a href="#zone">Avignon</a></li>
+          <li><a href="#zone">Salon-de-Provence</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Informations</h4>
+        <ul>
+          <li><a href="#mentions">Mentions légales</a></li>
+          <li><a href="#confidentialite">Politique de confidentialité</a></li>
+          <li><a href="#cgv">Conditions générales</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p>RBT Bâtiment Multiservices, SASU au capital de <span class="todo">[[À CONFIRMER]]</span>. Raison sociale complète <span class="todo">[[À CONFIRMER]]</span>. SIREN <span class="todo">[[À CONFIRMER]]</span>. Siège social à Pertuis, adresse <span class="todo">[[À CONFIRMER]]</span>.</p>
+      <p>Assurance décennale souscrite auprès de <span class="todo">[[À CONFIRMER, assureur]]</span>, contrat numéro <span class="todo">[[À CONFIRMER]]</span>, couvrant les travaux réalisés en France métropolitaine.</p>
+      <p>&copy; <span id="year">2026</span> RBT Bâtiment Multiservices</p>
+    </div>
+  </div>
+</footer>
+
+<!-- elements persistants -->
+<div class="stickybar" id="stickybar">
+  <a href="tel:+33767806239"><small>Appeler</small>07 67 80 62 39</a>
+  <a class="sec" href="#contact">Devis</a>
+</div>
+<a class="deskcall" href="tel:+33767806239">
+  <small>Rappel le jour même</small>
+  <b>07 67 80 62 39</b>
+</a>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"LocalBusiness",
+  "additionalType":"https://schema.org/HomeAndConstructionBusiness",
+  "name":"RBT Bâtiment Multiservices",
+  "description":"Entreprise du bâtiment à Pertuis. Couverture, nettoyage de toiture et maçonnerie dans le Vaucluse et les départements voisins.",
+  "telephone":"+33767806239",
+  "foundingDate":"2020",
+  "logo":"rbt-logo-512.png",
+  "image":"rbt-logo-512.png",
+  "address":{"@type":"PostalAddress","addressLocality":"Pertuis","postalCode":"84120","addressRegion":"Vaucluse","addressCountry":"FR"},
+  "areaServed":[
+    {"@type":"City","name":"Pertuis"},
+    {"@type":"City","name":"Aix-en-Provence"},
+    {"@type":"City","name":"Manosque"},
+    {"@type":"City","name":"Marseille"},
+    {"@type":"City","name":"Avignon"},
+    {"@type":"City","name":"Salon-de-Provence"},
+    {"@type":"City","name":"Brignoles"},
+    {"@type":"City","name":"Toulon"},
+    {"@type":"City","name":"Nîmes"},
+    {"@type":"City","name":"Digne-les-Bains"},
+    {"@type":"City","name":"Cannes"},
+    {"@type":"City","name":"Nice"}
+  ],
+  "hasOfferCatalog":{
+    "@type":"OfferCatalog",
+    "name":"Travaux du bâtiment",
+    "itemListElement":[
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Couverture"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Nettoyage de toiture"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Maçonnerie"}}
+    ]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Comment obtenir un devis","acceptedAnswer":{"@type":"Answer","text":"Appelez le 07 67 80 62 39 ou remplissez le formulaire. Nous rappelons le jour même pour fixer une visite. Le devis est envoyé par e-mail après le passage sur place."}},
+    {"@type":"Question","name":"Sous quel délai un chantier peut démarrer","acceptedAnswer":{"@type":"Answer","text":"Le délai dépend du métier et de la saison. La date de démarrage est indiquée sur le devis avant votre signature."}},
+    {"@type":"Question","name":"Les devis sont-ils payants","acceptedAnswer":{"@type":"Answer","text":"Le déplacement, la prise de mesures et l'établissement du devis sont gratuits dans notre zone d'intervention."}},
+    {"@type":"Question","name":"Comment se passe le paiement","acceptedAnswer":{"@type":"Answer","text":"Les modalités figurent sur le devis, avec le montant de l'acompte et l'échéancier."}},
+    {"@type":"Question","name":"Quelles assurances couvrent les travaux","acceptedAnswer":{"@type":"Answer","text":"L'entreprise est couverte par une responsabilité civile professionnelle et une garantie décennale. L'attestation est remise avec le devis."}},
+    {"@type":"Question","name":"Qui intervient si un problème apparaît après la réception","acceptedAnswer":{"@type":"Answer","text":"Vous appelez le même numéro. Nous revenons constater sur place. Les désordres relevant de la garantie décennale sont pris en charge pendant dix ans à compter de la réception."}}
+  ]
+}
+</script>
+
+<script>
+(function(){
+  "use strict";
+
+  /* bandeau de disponibilite, memorise pour la session */
+  var topbar=document.getElementById('topbar');
+  if(sessionStorage.getItem('rbt-topbar')==='off'){topbar.hidden=true;}
+  document.getElementById('topbar-close').addEventListener('click',function(){
+    topbar.hidden=true;
+    try{sessionStorage.setItem('rbt-topbar','off');}catch(e){}
+  });
+
+  /* en-tete compact au defilement */
+  var hdr=document.getElementById('hdr');
+  var sticky=document.getElementById('stickybar');
+  var last=window.pageYOffset;
+  var foot=document.querySelector('.foot');
+
+  function onScroll(){
+    var y=window.pageYOffset;
+    hdr.classList.toggle('small',y>60);
+
+    var pastHero=y>window.innerHeight*0.6;
+    var footTop=foot.getBoundingClientRect().top;
+    var overFooter=footTop<window.innerHeight-80;
+    var goingUp=y<last;
+    sticky.classList.toggle('show',pastHero&&(goingUp||y<last+2)&&!overFooter);
+    last=y;
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+
+  /* menu mobile */
+  var burger=document.getElementById('burger'),mnav=document.getElementById('mnav');
+  burger.addEventListener('click',function(){
+    var open=mnav.classList.toggle('open');
+    burger.setAttribute('aria-expanded',open?'true':'false');
+  });
+  mnav.addEventListener('click',function(e){
+    if(e.target.tagName==='A'){mnav.classList.remove('open');burger.setAttribute('aria-expanded','false');}
+  });
+
+  /* selecteur de chantier */
+  var tabs=Array.prototype.slice.call(document.querySelectorAll('.tabs [role="tab"]'));
+  var selmob=document.getElementById('selmob');
+  function showJob(job){
+    tabs.forEach(function(t){
+      var on=t.dataset.job===job;
+      t.setAttribute('aria-selected',on?'true':'false');
+      document.getElementById(t.getAttribute('aria-controls')).hidden=!on;
+    });
+    selmob.value=job;
+  }
+  tabs.forEach(function(t){t.addEventListener('click',function(){showJob(t.dataset.job);});});
+  selmob.addEventListener('change',function(){showJob(selmob.value);});
+
+  /* pre-remplissage du formulaire */
+  var typeField=document.getElementById('f-type');
+  document.addEventListener('click',function(e){
+    var link=e.target.closest('[data-fill]');
+    if(!link)return;
+    typeField.value=link.dataset.fill;
+    typeField.dispatchEvent(new Event('change'));
+    document.getElementById('formok').hidden=true;
+    document.getElementById('devis').hidden=false;
+  });
+
+  /* filtre des realisations */
+  var fbtns=Array.prototype.slice.call(document.querySelectorAll('.filters button'));
+  var works=Array.prototype.slice.call(document.querySelectorAll('#works .work'));
+  fbtns.forEach(function(b){
+    b.addEventListener('click',function(){
+      fbtns.forEach(function(o){o.setAttribute('aria-pressed',o===b?'true':'false');});
+      var f=b.dataset.filter;
+      works.forEach(function(w){w.hidden=(f!=='all'&&w.dataset.cat!==f);});
+    });
+  });
+
+  /* accordeon, une seule question ouverte */
+  var dets=Array.prototype.slice.call(document.querySelectorAll('#faq-list details'));
+  dets.forEach(function(d){
+    d.addEventListener('toggle',function(){
+      if(!d.open)return;
+      dets.forEach(function(o){if(o!==d)o.open=false;});
+    });
+  });
+
+  /* formulaire */
+  var form=document.getElementById('devis');
+  var okBox=document.getElementById('formok');
+  var consentWrap=document.getElementById('consent-wrap');
+  var rgpd=document.getElementById('f-rgpd');
+
+  function valid(el){
+    var v=el.value.trim();
+    if(el.id==='f-tel')return /^(?:\+33|0)[1-9](?:[ .-]?\d{2}){4}$/.test(v);
+    if(el.id==='f-mail')return /^[^\s@]+@[^\s@]+\.[a-z]{2,}$/i.test(v);
+    if(el.id==='f-desc')return v.length>=10;
+    return v.length>=2;
+  }
+  function check(el){
+    var w=el.closest('.field');
+    if(!el.value.trim()){w.classList.remove('ok','bad');return false;}
+    var good=valid(el);
+    w.classList.toggle('bad',!good);
+    w.classList.toggle('ok',good);
+    return good;
+  }
+  var fields=Array.prototype.slice.call(form.querySelectorAll('.field input,.field select,.field textarea'));
+  fields.forEach(function(el){
+    el.addEventListener('blur',function(){check(el);});
+    el.addEventListener('input',function(){if(el.closest('.field').classList.contains('bad'))check(el);});
+    el.addEventListener('change',function(){check(el);});
+  });
+  rgpd.addEventListener('change',function(){consentWrap.classList.toggle('bad',!rgpd.checked);});
+
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var firstBad=null;
+    fields.forEach(function(el){
+      var w=el.closest('.field');
+      var good=el.value.trim()?valid(el):false;
+      w.classList.toggle('bad',!good);
+      w.classList.toggle('ok',good);
+      if(!good&&!firstBad)firstBad=el;
+    });
+    var consentOk=rgpd.checked;
+    consentWrap.classList.toggle('bad',!consentOk);
+    if(!consentOk&&!firstBad)firstBad=rgpd;
+    if(firstBad){firstBad.focus();return;}
+    form.hidden=true;
+    okBox.hidden=false;
+    okBox.scrollIntoView({block:'center',behavior:'smooth'});
+  });
+
+  document.getElementById('year').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
