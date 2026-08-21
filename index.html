@@ -123,6 +123,7 @@ section{padding:60px 0}
 .hero-facts b{display:block;font-family:var(--tt);font-size:1.3rem;font-weight:700}
 .mosaic{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-content:start}
 .mosaic .ph{min-height:210px}
+.mosaic img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block}
 .mosaic .m3{display:none}
 .mkey{background:var(--orange);color:#fff;padding:20px;display:flex;flex-direction:column;justify-content:flex-end;min-height:120px}
 .mkey b{font-family:var(--tt);font-size:clamp(1.5rem,4.4vw,2rem);font-weight:700;line-height:1.1}
@@ -149,6 +150,7 @@ section{padding:60px 0}
 .bg-2 .card{background:var(--creme)}
 .card-lead{display:grid;gap:20px}
 .card-lead .ph{min-height:180px}
+.card-lead img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
 .card h3{margin-bottom:8px}
 .card .num{font-family:var(--tt);font-weight:700;font-size:1.5rem;color:var(--orange);line-height:1;display:block;margin-bottom:10px}
 .card p{font-size:.98rem;color:rgba(50,52,51,.82)}
@@ -179,6 +181,7 @@ section{padding:60px 0}
 .works{display:grid;gap:16px}
 .work{background:var(--creme);border-left:3px solid var(--orange)}
 .work .ph{border:0;border-bottom:2px solid var(--orange);min-height:170px;background:var(--creme-2)}
+.work img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;border-bottom:2px solid var(--orange)}
 .work-b{padding:18px 20px}
 .work h3{font-size:1.05rem;margin-bottom:6px}
 .work dl{margin:10px 0 0;font-size:.9rem}
@@ -186,6 +189,8 @@ section{padding:60px 0}
 .work dt{color:rgba(50,52,51,.6);flex:0 0 78px}
 .work dd{margin:0}
 .work[hidden]{display:none}
+.noworks{grid-column:1/-1;background:var(--creme);border-left:3px solid var(--orange);padding:24px;font-size:.98rem}
+.noworks[hidden]{display:none}
 
 /* avis */
 .reviews{display:grid;gap:16px;margin-top:28px}
@@ -263,7 +268,7 @@ section{padding:60px 0}
 
 @media(min-width:640px){
   .hero-grid{gap:40px}
-  .mosaic .m3{display:flex}
+  .mosaic .m3{display:block}
   .jobs-row{grid-template-columns:1fr 1fr}
   .works{grid-template-columns:1fr 1fr}
   .reviews{grid-template-columns:1fr}
@@ -375,9 +380,9 @@ section{padding:60px 0}
       </ul>
     </div>
     <div class="mosaic">
-      <div class="ph m1"><span>Photo à fournir, réfection de toiture en tuiles, format portrait</span></div>
-      <div class="ph m2"><span>Photo à fournir, démoussage de toiture avant et après</span></div>
-      <div class="ph m3"><span>Photo à fournir, mur en pierre monté par l'équipe</span></div>
+      <img class="m1" src="photos/hero-toiture-pergola.jpg" width="507" height="676" alt="Reprise de tuiles sur la toiture d'une villa provençale, pergola en bois en arrière-plan">
+      <img class="m2" src="photos/hero-toiture-cheminee.jpg" width="507" height="676" alt="Réfection de couverture autour d'une souche de cheminée, tuiles canal en cours de repose">
+      <img class="m3" src="photos/hero-charpente-neuve.jpg" width="507" height="676" alt="Charpente neuve avec écran sous toiture posé avant la repose des tuiles">
       <div class="mkey">
         <b>84 13 83 04</b>
         <span>les quatre départements où nous nous déplaçons</span>
@@ -480,7 +485,7 @@ section{padding:60px 0}
             <p>Chaque intervention commence par une montée sur le toit et un relevé précis. Vous recevez ensuite un devis qui détaille les fournitures et la main d'œuvre poste par poste.</p>
             <a class="more" href="#contact" data-fill="couverture">Demander un devis couverture <span class="arrow">&rarr;</span></a>
           </div>
-          <div class="ph"><span>Photo à fournir, réfection de couverture en tuiles canal, Pertuis</span></div>
+          <img src="photos/metier-couverture.jpg" width="1100" height="825" loading="lazy" alt="Toiture en tuiles canal après réfection complète, vue depuis le faîtage">
         </div>
       </article>
 
@@ -562,7 +567,7 @@ section{padding:60px 0}
   <div class="wrap">
     <p class="eyebrow"><span class="mark"></span>Réalisations</p>
     <h2>Quelques chantiers menés par l'équipe</h2>
-    <p class="lede">Les visuels et les données de chaque chantier restent à fournir. Seules des photos prises sur nos propres chantiers seront publiées.</p>
+    <p class="lede">Toutes les photos ci-dessous ont été prises sur nos chantiers. Les villes et les durées restent à compléter.</p>
 
     <div class="filters" role="group" aria-label="Filtrer les réalisations par métier">
       <button type="button" data-filter="all" aria-pressed="true">Tous les chantiers</button>
@@ -573,9 +578,9 @@ section{padding:60px 0}
 
     <div class="works" id="works">
       <article class="work" data-cat="couverture">
-        <div class="ph"><span>Photo à fournir, réfection de toiture, format paysage</span></div>
+        <img src="photos/chantier-reprise-tuiles.jpg" width="1000" height="750" loading="lazy" alt="Reprise de tuiles et ouverture ponctuelle de la couverture sur une villa provençale">
         <div class="work-b">
-          <h3>Réfection de couverture</h3>
+          <h3>Reprise de couverture</h3>
           <dl>
             <div><dt>Ville</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
             <div><dt>Travaux</dt><dd>Dépose des tuiles, reprise du support, repose</dd></div>
@@ -584,34 +589,45 @@ section{padding:60px 0}
         </div>
       </article>
       <article class="work" data-cat="couverture">
-        <div class="ph"><span>Photo à fournir, pose de gouttières en zinc, format paysage</span></div>
+        <img src="photos/chantier-charpente-ecran.jpg" width="1000" height="750" loading="lazy" alt="Charpente neuve et écran sous toiture posés avant la repose des tuiles">
         <div class="work-b">
-          <h3>Pose de gouttières</h3>
+          <h3>Charpente et écran sous toiture</h3>
           <dl>
             <div><dt>Ville</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
-            <div><dt>Travaux</dt><dd>Dépose de l'ancien réseau, pose de gouttières zinc</dd></div>
+            <div><dt>Travaux</dt><dd>Dépose, charpente neuve, écran sous toiture</dd></div>
             <div><dt>Durée</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
           </dl>
         </div>
       </article>
-      <article class="work" data-cat="nettoyage">
-        <div class="ph"><span>Photo à fournir, démoussage de toiture avant et après, format paysage</span></div>
+      <article class="work" data-cat="couverture">
+        <img src="photos/chantier-toiture-endommagee.jpg" width="1000" height="750" loading="lazy" alt="Toiture affaissée avant intervention, tuiles effondrées sur un pan de couverture">
         <div class="work-b">
-          <h3>Démoussage de toiture</h3>
+          <h3>Toiture affaissée</h3>
           <dl>
             <div><dt>Ville</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
-            <div><dt>Travaux</dt><dd>Démoussage puis traitement hydrofuge</dd></div>
+            <div><dt>Travaux</dt><dd>Constat avant travaux, dépose du pan endommagé</dd></div>
             <div><dt>Durée</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
           </dl>
         </div>
       </article>
-      <article class="work" data-cat="nettoyage">
-        <div class="ph"><span>Photo à fournir, nettoyage de gouttières, format paysage</span></div>
+      <article class="work" data-cat="couverture">
+        <img src="photos/chantier-chassis-toit.jpg" width="1000" height="750" loading="lazy" alt="Pose de châssis de toit et de tuiles à douille sur une couverture en tuiles canal">
         <div class="work-b">
-          <h3>Nettoyage de gouttières</h3>
+          <h3>Pose de châssis de toit</h3>
           <dl>
             <div><dt>Ville</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
-            <div><dt>Travaux</dt><dd>Curage des chéneaux et des descentes</dd></div>
+            <div><dt>Travaux</dt><dd>Ouverture du pan, pose des châssis et solins</dd></div>
+            <div><dt>Durée</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
+          </dl>
+        </div>
+      </article>
+      <article class="work" data-cat="couverture">
+        <img src="photos/chantier-villa-terrasse.jpg" width="1000" height="750" loading="lazy" alt="Chantier de couverture sur une villa avec terrasse, tuiles stockées sur le rampant">
+        <div class="work-b">
+          <h3>Couverture de villa</h3>
+          <dl>
+            <div><dt>Ville</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
+            <div><dt>Travaux</dt><dd>Reprise des rampants et des tuiles de rive</dd></div>
             <div><dt>Durée</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
           </dl>
         </div>
@@ -638,6 +654,7 @@ section{padding:60px 0}
           </dl>
         </div>
       </article>
+      <p class="noworks" id="noworks" hidden>Aucun chantier de ce type n'est encore publié. Appelez le 07 67 80 62 39, nous vous décrivons les interventions déjà menées.</p>
     </div>
   </div>
 </section>
@@ -840,7 +857,7 @@ section{padding:60px 0}
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <img src="rbt-logo-inverse.png" alt="RBT Bâtiment &amp; Multiservices" width="79" height="44">
+        <img src="rbt-logo-inverse.png" alt="RBT Bâtiment &amp; Multiservices" width="79" height="44" loading="lazy">
         <p>Couverture, nettoyage de toiture et maçonnerie à Pertuis, dans le 84, le 13, le 83 et le 04.</p>
         <p>
           <a href="tel:+33767806239">07 67 80 62 39</a><br>
@@ -916,7 +933,11 @@ section{padding:60px 0}
   ],
   "founder":{"@type":"Person","name":"Azzeddine Keddache"},
   "logo":"rbt-logo-512.png",
-  "image":"rbt-logo-512.png",
+  "image":[
+    "photos/metier-couverture.jpg",
+    "photos/chantier-reprise-tuiles.jpg",
+    "photos/chantier-charpente-ecran.jpg"
+  ],
   "address":{"@type":"PostalAddress","streetAddress":"47 rue Vivienne","addressLocality":"Paris","postalCode":"75002","addressCountry":"FR"},
   "areaServed":[
     {"@type":"AdministrativeArea","name":"Vaucluse (84)"},
@@ -1032,8 +1053,13 @@ section{padding:60px 0}
   fbtns.forEach(function(b){
     b.addEventListener('click',function(){
       fbtns.forEach(function(o){o.setAttribute('aria-pressed',o===b?'true':'false');});
-      var f=b.dataset.filter;
-      works.forEach(function(w){w.hidden=(f!=='all'&&w.dataset.cat!==f);});
+      var f=b.dataset.filter,shown=0;
+      works.forEach(function(w){
+        var hide=(f!=='all'&&w.dataset.cat!==f);
+        w.hidden=hide;
+        if(!hide)shown++;
+      });
+      document.getElementById('noworks').hidden=shown>0;
     });
   });
 
