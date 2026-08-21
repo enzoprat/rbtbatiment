@@ -184,10 +184,7 @@ section{padding:60px 0}
 .work img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;border-bottom:2px solid var(--orange)}
 .work-b{padding:18px 20px}
 .work h3{font-size:1.05rem;margin-bottom:6px}
-.work dl{margin:10px 0 0;font-size:.9rem}
-.work dl div{display:flex;gap:8px;padding:5px 0;border-top:1px solid var(--filet)}
-.work dt{color:rgba(50,52,51,.6);flex:0 0 78px}
-.work dd{margin:0}
+.work-t{margin:10px 0 0;padding-top:10px;border-top:1px solid var(--filet);font-size:.92rem;color:rgba(50,52,51,.75)}
 .work[hidden]{display:none}
 .noworks{grid-column:1/-1;background:var(--creme);border-left:3px solid var(--orange);padding:24px;font-size:.98rem}
 .noworks[hidden]{display:none}
@@ -567,7 +564,7 @@ section{padding:60px 0}
   <div class="wrap">
     <p class="eyebrow"><span class="mark"></span>Réalisations</p>
     <h2>Quelques chantiers menés par l'équipe</h2>
-    <p class="lede">Douze chantiers de couverture et de gros œuvre. Toutes les photos ont été prises sur place par l'équipe. Les villes et les durées restent à compléter.</p>
+    <p class="lede">Douze chantiers de couverture et de gros œuvre. Toutes les photos ont été prises sur place par l'équipe.</p>
 
     <div class="filters" role="group" aria-label="Filtrer les réalisations par métier">
       <button type="button" data-filter="all" aria-pressed="true">Tous les chantiers</button>
@@ -581,132 +578,84 @@ section{padding:60px 0}
         <img src="photos/chantier-reprise-tuiles.jpg" width="1000" height="750" loading="lazy" alt="Reprise de tuiles et ouverture ponctuelle de la couverture sur une villa provençale">
         <div class="work-b">
           <h3>Reprise de couverture</h3>
-          <dl>
-            <div><dt>Ville</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
-            <div><dt>Travaux</dt><dd>Dépose des tuiles, reprise du support, repose</dd></div>
-            <div><dt>Durée</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
-          </dl>
+          <p class="work-t">Dépose des tuiles, reprise du support, repose</p>
         </div>
       </article>
       <article class="work" data-cat="couverture">
         <img src="photos/chantier-charpente-ecran.jpg" width="1000" height="750" loading="lazy" alt="Charpente neuve et écran sous toiture posés avant la repose des tuiles">
         <div class="work-b">
           <h3>Charpente et écran sous toiture</h3>
-          <dl>
-            <div><dt>Ville</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
-            <div><dt>Travaux</dt><dd>Dépose, charpente neuve, écran sous toiture</dd></div>
-            <div><dt>Durée</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
-          </dl>
+          <p class="work-t">Dépose, charpente neuve, écran sous toiture</p>
         </div>
       </article>
       <article class="work" data-cat="couverture">
         <img src="photos/chantier-toiture-endommagee.jpg" width="1000" height="750" loading="lazy" alt="Toiture affaissée avant intervention, tuiles effondrées sur un pan de couverture">
         <div class="work-b">
           <h3>Toiture affaissée</h3>
-          <dl>
-            <div><dt>Ville</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
-            <div><dt>Travaux</dt><dd>Constat avant travaux, dépose du pan endommagé</dd></div>
-            <div><dt>Durée</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
-          </dl>
+          <p class="work-t">Constat avant travaux, dépose du pan endommagé</p>
         </div>
       </article>
       <article class="work" data-cat="couverture">
         <img src="photos/chantier-chassis-toit.jpg" width="1000" height="750" loading="lazy" alt="Pose de châssis de toit et de tuiles à douille sur une couverture en tuiles canal">
         <div class="work-b">
           <h3>Pose de châssis de toit</h3>
-          <dl>
-            <div><dt>Ville</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
-            <div><dt>Travaux</dt><dd>Ouverture du pan, pose des châssis et solins</dd></div>
-            <div><dt>Durée</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
-          </dl>
+          <p class="work-t">Ouverture du pan, pose des châssis et solins</p>
         </div>
       </article>
       <article class="work" data-cat="couverture">
         <img src="photos/chantier-villa-terrasse.jpg" width="1000" height="750" loading="lazy" alt="Chantier de couverture sur une villa avec terrasse, tuiles stockées sur le rampant">
         <div class="work-b">
           <h3>Couverture de villa</h3>
-          <dl>
-            <div><dt>Ville</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
-            <div><dt>Travaux</dt><dd>Reprise des rampants et des tuiles de rive</dd></div>
-            <div><dt>Durée</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
-          </dl>
+          <p class="work-t">Reprise des rampants et des tuiles de rive</p>
         </div>
       </article>
       <article class="work" data-cat="maconnerie">
         <img src="photos/chantier-gros-oeuvre.jpg" width="1000" height="750" loading="lazy" alt="Gros œuvre d'une maison neuve, murs en béton banché et grande ouverture de séjour">
         <div class="work-b">
           <h3>Gros œuvre d'une maison</h3>
-          <dl>
-            <div><dt>Ville</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
-            <div><dt>Travaux</dt><dd>Élévation des murs et coulage des linteaux</dd></div>
-            <div><dt>Durée</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
-          </dl>
+          <p class="work-t">Élévation des murs et coulage des linteaux</p>
         </div>
       </article>
       <article class="work" data-cat="maconnerie">
         <img src="photos/chantier-elevation-murs.jpg" width="1000" height="750" loading="lazy" alt="Murs en parpaing montés avec chaînages et attentes d'acier en attente de coulage">
         <div class="work-b">
           <h3>Élévation en parpaing</h3>
-          <dl>
-            <div><dt>Ville</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
-            <div><dt>Travaux</dt><dd>Montage des murs, chaînages et attentes d'acier</dd></div>
-            <div><dt>Durée</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
-          </dl>
+          <p class="work-t">Montage des murs, chaînages et attentes d'acier</p>
         </div>
       </article>
       <article class="work" data-cat="maconnerie">
         <img src="photos/chantier-dalle-ferraillage.jpg" width="1000" height="750" loading="lazy" alt="Ferraillage d'une dalle béton avec treillis soudé avant coulage">
         <div class="work-b">
           <h3>Dalle béton</h3>
-          <dl>
-            <div><dt>Ville</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
-            <div><dt>Travaux</dt><dd>Coffrage, ferraillage et coulage de la dalle</dd></div>
-            <div><dt>Durée</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
-          </dl>
+          <p class="work-t">Coffrage, ferraillage et coulage de la dalle</p>
         </div>
       </article>
       <article class="work" data-cat="maconnerie">
         <img src="photos/chantier-mur-cloture.jpg" width="1000" height="750" loading="lazy" alt="Mur de clôture en parpaing monté en limite de propriété">
         <div class="work-b">
           <h3>Mur de clôture</h3>
-          <dl>
-            <div><dt>Ville</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
-            <div><dt>Travaux</dt><dd>Fondation, montage du mur en limite de propriété</dd></div>
-            <div><dt>Durée</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
-          </dl>
+          <p class="work-t">Fondation, montage du mur en limite de propriété</p>
         </div>
       </article>
       <article class="work" data-cat="maconnerie">
         <img src="photos/chantier-fondations.jpg" width="1000" height="750" loading="lazy" alt="Tranchée de fondation ouverte au pied des murs d'une construction neuve">
         <div class="work-b">
           <h3>Fondations</h3>
-          <dl>
-            <div><dt>Ville</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
-            <div><dt>Travaux</dt><dd>Terrassement des tranchées et semelles filantes</dd></div>
-            <div><dt>Durée</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
-          </dl>
+          <p class="work-t">Terrassement des tranchées et semelles filantes</p>
         </div>
       </article>
       <article class="work" data-cat="maconnerie">
         <img src="photos/chantier-demolition.jpg" width="1000" height="750" loading="lazy" alt="Démolition partielle d'un bâtiment à la pelle mécanique avant reconstruction">
         <div class="work-b">
           <h3>Démolition avant reconstruction</h3>
-          <dl>
-            <div><dt>Ville</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
-            <div><dt>Travaux</dt><dd>Démolition à la pelle et évacuation des gravats</dd></div>
-            <div><dt>Durée</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
-          </dl>
+          <p class="work-t">Démolition à la pelle et évacuation des gravats</p>
         </div>
       </article>
       <article class="work" data-cat="maconnerie">
         <img src="photos/chantier-reseaux-enterres.jpg" width="1000" height="750" loading="lazy" alt="Tranchée de réseaux enterrés avec gaines et grillage avertisseur avant remblai">
         <div class="work-b">
           <h3>Réseaux enterrés</h3>
-          <dl>
-            <div><dt>Ville</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
-            <div><dt>Travaux</dt><dd>Tranchée, pose des gaines et grillage avertisseur</dd></div>
-            <div><dt>Durée</dt><dd class="todo">[[À CONFIRMER]]</dd></div>
-          </dl>
+          <p class="work-t">Tranchée, pose des gaines et grillage avertisseur</p>
         </div>
       </article>
       <p class="noworks" id="noworks" hidden>Aucun chantier de ce type n'est encore publié. Appelez le 07 67 80 62 39, nous vous décrivons les interventions déjà menées.</p>
@@ -842,8 +791,8 @@ section{padding:60px 0}
       <div class="row"><b>E-mail</b><span class="todo">[[À CONFIRMER]]</span></div>
       <div class="row"><b>Zone de travail</b>Pertuis et les départements 84, 13, 83 et 04</div>
       <div class="row"><b>Siège social</b>47 rue Vivienne, 75002 Paris</div>
-      <div class="row"><b>Horaires</b><span class="todo">[[À CONFIRMER]]</span></div>
-      <div class="row"><b>Délai de réponse</b>Rappel le jour même du lundi au vendredi</div>
+      <div class="row"><b>Horaires</b>Du lundi au samedi, de 7 h 30 à 18 h</div>
+      <div class="row"><b>Délai de réponse</b>Rappel le jour même du lundi au samedi</div>
     </div>
 
     <div>
@@ -919,7 +868,7 @@ section{padding:60px 0}
           E-mail <span class="todo">[[À CONFIRMER]]</span><br>
           Siège social, 47 rue Vivienne, 75002 Paris<br>
           Interventions dans le 84, le 13, le 83 et le 04<br>
-          Horaires <span class="todo">[[À CONFIRMER]]</span>
+          Horaires, du lundi au samedi de 7 h 30 à 18 h
         </p>
       </div>
       <div>
@@ -994,6 +943,9 @@ section{padding:60px 0}
     "photos/chantier-charpente-ecran.jpg"
   ],
   "address":{"@type":"PostalAddress","streetAddress":"47 rue Vivienne","addressLocality":"Paris","postalCode":"75002","addressCountry":"FR"},
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"07:30","closes":"18:00"}
+  ],
   "areaServed":[
     {"@type":"AdministrativeArea","name":"Vaucluse (84)"},
     {"@type":"AdministrativeArea","name":"Bouches-du-Rhône (13)"},
